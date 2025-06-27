@@ -6,15 +6,7 @@ This static class contains all the API addresses and SQL queries used throughout
 
 ### API Endpoints
 
-#### BasketballApi
-- `BaseUrl`: The base URL for the basketball API
-- `ApiKey`: The API key for authentication
-- `ApiKeyHeader`: The header name for the API key
-- `Endpoints`: Contains all basketball API endpoint paths
-  - `Games`: Games endpoint
-  - `LiveScore`: Live scores endpoint
-  - `Teams`: Teams endpoint
-  - `Standings`: Standings endpoint
+
 
 #### PokemonApi
 - `BaseUrl`: The base URL for the Pokemon API
@@ -37,9 +29,7 @@ This static class contains all the API addresses and SQL queries used throughout
 
 ### Using API Constants
 ```csharp
-// Basketball API
-var url = $"{AppConstants.BasketballApi.BaseUrl}{AppConstants.BasketballApi.Endpoints.Games}";
-request.Headers.Add(AppConstants.BasketballApi.ApiKeyHeader, AppConstants.BasketballApi.ApiKey);
+
 
 // Pokemon API
 var url = $"{AppConstants.PokemonApi.BaseUrl}{string.Format(AppConstants.PokemonApi.Endpoints.PokemonById, id)}";
